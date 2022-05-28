@@ -1,0 +1,26 @@
+{
+  "name": "web-visit-counter",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/blaziter/web-visit-counter.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/blaziter/web-visit-counter/issues"
+  },
+  "homepage": "https://github.com/blaziter/web-visit-counter#readme",
+  "devDependencies": {
+    "webpack": "^5.72.1"
+  },
+  "dependencies": {
+    "lodash": "^4.17.21"
+  }
+}
