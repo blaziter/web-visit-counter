@@ -5,6 +5,7 @@ let visit = {
 
 chrome.tabs.onActivated.addListener((activeInfo) => {
   getCurrentTab();
+  fileController.writeFile(visit);
 });
 
 const getCurrentTab = async () => {

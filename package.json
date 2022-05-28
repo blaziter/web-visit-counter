@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack"
+    "dev": "webpack --watch --config webpack.dev.js",
+    "build": "webpack --config webpack.prod.js"
   },
   "repository": {
     "type": "git",
@@ -18,9 +18,22 @@
   },
   "homepage": "https://github.com/blaziter/web-visit-counter#readme",
   "devDependencies": {
-    "webpack": "^5.72.1"
+    "@babel/core": "^7.18.2",
+    "@babel/preset-env": "^7.18.2",
+    "@babel/preset-react": "^7.17.12",
+    "babel-loader": "^8.2.5",
+    "copy-webpack-plugin": "^11.0.0",
+    "html-webpack-plugin": "^5.5.0",
+    "webpack": "^5.72.1",
+    "webpack-cli": "^4.9.2",
+    "webpack-merge": "^5.8.0"
   },
   "dependencies": {
-    "lodash": "^4.17.21"
+    "archiver": "^5.3.1",
+    "express": "^4.18.1",
+    "fs": "^0.0.1-security",
+    "lodash": "^4.17.21",
+    "react": "^18.1.0",
+    "react-dom": "^18.1.0"
   }
 }
