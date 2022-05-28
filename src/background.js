@@ -7,7 +7,7 @@ chrome.tabs.onActivated.addListener(async (activeInfo) => {
   //getCurrentTab();
   const all = await chrome.storage.sync.get();
   for (const [key, val] of Object.entries(all)) {
-    console.log(key + " " + val)
+    console.log(key + ' ' + val)
   }
 });
 
