@@ -1,13 +1,19 @@
 import React from "react";
-import { render } from 'react-dom';
+import { render } from "react-dom";
+import "bootstrap/dist/css/bootstrap.min.css";
+import { Table } from "react-bootstrap";
+import {useChromeStorageSync} from 'use-chrome-storage';
 
 const Popup = () => {
-
+    const [value, setValue, isPersistent, error] = useChromeStorageSync('counterLocal', 0);
     return (
-        <div>
+        <>
             <h3 className="text-align-center">Web Counter</h3>
-        </div>
-    )
-}
+            <Table>
 
-render(<Popup />, document.getElementById('react-target'));
+            </Table>
+        </>
+    );
+};
+
+render(<Popup />, document.getElementById("react-target"));
