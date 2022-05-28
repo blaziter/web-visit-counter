@@ -1,6 +1,6 @@
 import React from 'react';
 import { render } from 'react-dom';
-import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap';
 import { Table } from 'react-bootstrap';
 import { useChromeStorageSync } from 'use-chrome-storage';
 
