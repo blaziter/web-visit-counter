@@ -10,7 +10,8 @@ const Options = () => {
         <>
             <h1 className='text-align-center'>Web Counter</h1>
             <Table>
-
+                //get all visited pages
+                
             </Table>
         </>
     )

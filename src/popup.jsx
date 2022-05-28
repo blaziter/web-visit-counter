@@ -10,7 +10,8 @@ const Popup = () => {
         <>
             <h3 className='text-align-center'>Web Counter</h3>
             <Table>
-
+                // get 3 highest visited pages
+                
             </Table>
         </>
     );
