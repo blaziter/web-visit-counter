@@ -1,14 +1,14 @@
 let count = 0;
 
 chrome.tabs.onActivated.addListener(async (activeInfo) => {
-  /*chrome.storage.local.clear(() => {
+  /*chrome.storage.sync.clear(() => {
     console.log('Everything was removed');
   });*/
-  //getCurrentTab();
-  const all = await chrome.storage.sync.get();
+  getCurrentTab();
+  /*const all = await chrome.storage.sync.get();
   for (const [key, val] of Object.entries(all)) {
     console.log(key + ' ' + val)
-  }
+  }*/
 });
 
 const getCurrentTab = async () => {
